@@ -1,0 +1,42 @@
+.feedback {
+
+    &__container {
+        background: url('../images/content/bg-feedback.jpg') center center / cover no-repeat;
+        display: flex;
+    }
+
+    &__title {
+        display: flex;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 33px;
+        font-weight: 700;
+        line-height: 48px;
+    }
+
+    &__button {
+        border: 1px solid #fff;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        justify-content: center;
+
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+
+    &__button--prev {
+        transform: rotate(180deg);
+    }
+
+    &__arrows {
+        width: 9px;
+        height: 9px;
+        fill: #fff;
+        display: flex;
+    }
+
+}
