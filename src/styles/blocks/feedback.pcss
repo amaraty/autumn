@@ -1,8 +1,19 @@
 .feedback {
     background: url('../images/content/bg-feedback.jpg') center center / cover no-repeat;
+    height: 100vh;
+    min-width: 650px;
 
     &__container {
         display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
     &__title {
@@ -12,6 +23,20 @@
         font-size: 33px;
         font-weight: 700;
         line-height: 48px;
+        margin-right: 120px;
+    }
+    
+    &__buttons-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__buttons-item {
+        margin-right: 20px;
+
+        &:last-child{
+            margin-right: 0;
+        }
     }
 
     &__button {
