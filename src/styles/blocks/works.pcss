@@ -1,4 +1,13 @@
 .works {
+    height: 1100px;
+    display: flex;
+
+    &__container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
     &__title {
         color: #333c49;
@@ -6,5 +15,11 @@
         font-size: 36px;
         font-weight: 700;
         line-height: 48px;
+    }
+
+    &__content {
+        display: flex;
+        height: 50%;
+        width: 100%;
     }
 }

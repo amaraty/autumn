@@ -1,9 +1,19 @@
 .skills {
     display: flex;
+    justify-content: space-between;
 
     &-graphic {
+        width: 100%;
         display: flex;
         flex-direction: column;
+
+        &__item {
+            margin-bottom: 55px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &-row {
@@ -16,6 +26,10 @@
             font-size: 24px;
             font-weight: 700;
             line-height: 48px;
+        }
+
+        &__content {
+            margin-top: 40px;
         }
     }
 
