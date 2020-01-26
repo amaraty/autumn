@@ -4,6 +4,7 @@
 }
 
 .user {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -50,7 +51,22 @@
     display: flex;
     width: 637px;
 
+    @include tablets() {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    @include phones() {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     &__desc {
+        width: 43%;
         display: flex;
         text-align: right;
         color: #6d645a;
@@ -59,14 +75,39 @@
         font-weight: 600;
         line-height: 30px;
         margin-right: 25px;
+
+        @include tablets() {
+            width: 40%;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 30px;
+        }
+
+        @include phones() {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+        }
     }
 
     &__username{
-
+        width: 49%;
         color: #ffffff;
         font-family: "Open Sans";
         font-size: 72px;
         font-weight: 700;
         line-height: 60px;
+
+        @include tablets() {
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        @include phones() {
+            font-size: 36px;
+            line-height: 48px;
+        }
     }
 }

@@ -22,8 +22,7 @@
 
         @include tablets() {
             position: inherit;
-            transform: rotate(-90deg);
-            transform: translateY(31px);
+            transform: rotate(-90deg) translate(-22%, 0px);
         }
     }
 
@@ -53,6 +52,13 @@
             align-items: center;
             text-align: center;
         }
+
+        @include phones() {
+            width: 100%;
+            display: flex;
+            align-items: start;
+            text-align: left;
+        }
     }
 
     &__title-text {
@@ -61,9 +67,15 @@
         font-size: 30px;
         font-weight: 700;
         line-height: 36px;
+        margin-bottom: 54px;
 
         @include tablets() {
             width: 70%;
+            margin-bottom: 26px;
+        }
+
+        @include phones() {
+            margin-bottom: 26px;
         }
     }
 
