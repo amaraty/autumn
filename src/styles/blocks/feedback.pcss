@@ -16,6 +16,11 @@
         align-items: center;
         margin-top: 150px;
         margin-bottom: 96px;
+
+        @include phones() {
+            flex-direction: column;
+            margin-bottom: 48px;
+        }
     }
 
     &__title {
@@ -26,6 +31,11 @@
         font-weight: 700;
         line-height: 48px;
         margin-right: 120px;
+
+        @include phones() {
+            margin-right: 0;
+            margin-bottom: 48px;
+        }
     }
     
     &__buttons-list {
