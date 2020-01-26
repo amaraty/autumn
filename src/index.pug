@@ -10,18 +10,19 @@ html(lang="ru")
   body
     .wrapper
       .welcome-section
+        .parallax
+          .parallax__layer(data-speed="0.1")
+            img(src=require("images/content/hero-layer-1.png")).parallax__image
+          .parallax__layer(data-speed="0.30")
+            img(src=require("images/content/hero-layer-2.png")).parallax__image
+          .parallax__layer(data-speed="0.16")
+            img(src=require("images/content/hero-layer-3.png")).parallax__image
+          .parallax__layer(data-speed="0.2")
+            img(src=require("images/content/hero-layer-4.png")).parallax__image
+          .parallax__layer(data-speed="0.23")
+            img(src=require("images/content/hero-layer-5.png")).parallax__image
         section.hero
-          .parallax
-            .parallax__layer(data-speed="0.1")
-              img(src=require("images/content/hero-layer-1.png")).parallax__image
-            .parallax__layer(data-speed="0.30")
-              img(src=require("images/content/hero-layer-2.png")).parallax__image
-            .parallax__layer(data-speed="0.16")
-              img(src=require("images/content/hero-layer-3.png")).parallax__image
-            .parallax__layer(data-speed="0.2")
-              img(src=require("images/content/hero-layer-4.png")).parallax__image
-            .parallax__layer(data-speed="0.23")
-              img(src=require("images/content/hero-layer-5.png")).parallax__image
+          
           .container.hero__container
             header.hero__header
               .hero__logo
@@ -132,7 +133,7 @@ html(lang="ru")
                   .slider__buttons
                     a.direction-btn.direction-btn--next
                     a.direction-btn.direction-btn--prev
-                .slider__number 1
+                  .slider__number 1
                 .slider__info
                   .slider__tags
                     ul.tags
