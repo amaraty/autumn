@@ -1,117 +1,67 @@
-.skills {
-    display: flex;
-    justify-content: space-between;
-
-    @include tablets() {
-        justify-content: space-evenly;
+.skill {
+    position: relative;
+    width: 166px;
+    height: 166px;
+  
+    @include tablets {
+      width: 135px;
+      height: 135px;
     }
-
-    @include phones() {
-        flex-wrap: wrap;
-        width: 100%;
+}
+  
+.skill__circle {
+    fill: transparent;
+    &_under {
+      stroke: #e9e9e9;
+      opacity: 0.1;
+      stroke-width: 3px;
     }
-
-    &-graphic {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-
-        &__item {
-            margin-bottom: 55px;
-
-            @include phones() {
-                margin-bottom: 35px;
-            }
-
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
+    &_above {
+      stroke-width: 9px;
+      stroke-dasharray: 251;
+      stroke-dashoffset: 100;
     }
-
-    &-row {
-        display: flex;
-        flex-direction: column;
-
-        @include phones() {
-            align-items: center;
-            width: 86%;
-        }
-
-        &__title {
-            color: #ffffff;
-            font-family: "Open Sans";
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 48px;
-
-            @include tablets() {
-                text-align: center;
-            }
-
-            @include phones() {
-                align-items: center;
-            }
-        }
-
-        &__content {
-            margin-top: 40px;
-
-            @include phones() {
-                width: 100%;
-            }
-        }
-    }
-
-    &__item {
-        display: flex;
-
-        @include phones() {
-            margin-bottom: 20px;
-        }
+}
+  
+.skill__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba($text-color, .5);
+    padding: 14px;
+  
+    @include phones {
+      font-size: 16px;
     }
 }
 
-.skill {
-    position: relative;
-    width: 134px;
-    height: 134px;
+.skills-row__title {
+    margin-bottom: 26px;
+    font-size: 24px;
+    font-weight: 700;
+}
+  
+.skills-row__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &__circle {
-        fill:transparent;
+    flex-wrap: wrap;
+    @include phones {
+      justify-content: center;
     }
+}
+  
+.skills-row__item {
+    margin-left: 4%;
+}
 
-    &__circle-shape{
-        position: absolute;
+.skills {
+    @include phones {
+      text-align: center;
     }
-
-    &__circle--under {
-        stroke: #e9e9e9;
-        stroke-width: 3px;
-        opacity: 0.1;
-    }
-
-    &__circle--above {
-        stroke-width: 20px;
-        stroke-dasharray: 847;
-        stroke-dashoffset: 565;
-    }
-
-
-    &__title {
-        display: flex;
-        position: absolute;
-        text-align: center;
-        opacity: 0.5;
-        color: #ffffff;
-        font-family: "Open Sans";
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 48px;
-        text-transform: uppercase;
-    }
+}
+  
+.skills__item {
+    margin-bottom: 30px;
 }

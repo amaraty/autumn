@@ -66,12 +66,11 @@ html(lang="ru")
                         ["Родился:", "12 октября 1986"]
                       ];
 
-                    table.user__data
-                      table.user__data-table
-                        each row in rows
-                          tr.user__data-row
-                            each cell in row
-                              td #{cell}
+                    table.user__table
+                      each item in rows
+                        tr
+                          td.user__table-title #{item[0]}
+                          td.user__table-content #{item[1]}
 
 
               .about__right
@@ -87,38 +86,15 @@ html(lang="ru")
                   .ps__text
                     | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
       section.values
-        .container
-          .values__container
-            .values__pic
-              +image("content/hands2.png", "values__image")
-            .values__desc
+        .container.values__container
+            .values__wrapper
               .values__title
-                .values__title-text Чем я могу быть полезен вам
-                .values__title-subtext
+                .values__title-container
+                  .values__title-text Чем я могу быть полезен вам
+                  .values__title-subtext
                   | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
-              .values__content
-                -
-                  var items = [
-                    ["Frontend", ["HTML5", "CSS3", "javaScript", "jQuery и Vue.js"]],
-                    ["Workflow", ["GIT", "Terminal", "Gulp", "Webpack"]]
-                  ]
-                ul.skills-graphic
-                  each row in items
-                    li.skills-graphic__item
-                      .skills-row
-                        .skills-row__title #{row[0]}
-                        .skills-row__content
-                          ul.skills
-                            each skill in row[1]
-                              li.skills__item
-                                .skill
-                                  svg(viewBox="0 0 300 300").skill__circle-shape
-                                    circle(cx="150" cy="150" r="135").skill__circle.skill__circle--under
-                                    circle(cx="150" cy="150" r="135" stroke="url(#gradient)" transform='rotate(180 150 150)').skill__circle.skill__circle--above
-                                    linearGradient(id="gradient" x1="0" y1="0" x2="100%" y2="0")
-                                      stop(offset="0%" stop-color="#d0731b")
-                                      stop(offset="100%" stop-color="#dc9322")
-                                  .skill__title #{skill}
+              .values__widget
+                #skills-component
 
 
       section.works
@@ -241,4 +217,4 @@ html(lang="ru")
                 .citation__text Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает где вы живете
                 .citation__author Martin Golding
 
-  //-include ./templates/entry.pug
+    include ./templates/entry.pug
