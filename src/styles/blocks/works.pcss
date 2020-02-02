@@ -1,30 +1,20 @@
-.works {
-    height: 100%;
-    display: flex;
+.works__content {
+    padding-bottom: 60px;
 
-    &__container {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-
-        @include phones() {
-            align-items: center;
-        }
+    @include phones {
+        padding-bottom: 0px;
     }
+}
 
-    &__title {
-        color: #333c49;
-        font-family: "Open Sans";
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 48px;
-        margin-top: 148px;
-        margin-bottom: 55px;
-    }
-
-    &__content {
-        display: flex;
-        height: 50%;
+.works__container {
+    @include phones {
         width: 100%;
+    }
+}
+  
+.works__section-title {
+    @include phones {
+        text-align: center;
+        margin-bottom: 30px;
     }
 }

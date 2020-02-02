@@ -30,7 +30,11 @@
         font-size: 33px;
         font-weight: 700;
         line-height: 48px;
-        margin-right: 120px;
+        margin-bottom: 12%;
+
+        @include tablets {
+            justify-content: center;
+        }
 
         @include phones() {
             margin-right: 0;
@@ -78,5 +82,13 @@
 
     &__comment {
         margin-bottom: 213px;
+    }
+
+    &__send {
+
+        @include tablets {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }

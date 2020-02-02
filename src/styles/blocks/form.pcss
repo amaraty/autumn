@@ -1,3 +1,98 @@
 .form {
     margin-bottom: 160px;
+
+    &__elem {
+        width: 87%;
+    }
+
+    &__row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5.5%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include phones {
+            flex-direction: column;
+        }
+    }
+
+    &__column {
+        display: flex;
+        width: 48%;
+        margin-right: 10%;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include phones {
+            width: 100%;
+        }
+    }
+
+    &__block {
+        width: 100%;
+    }
+
+    &__block-title {
+        opacity: 0.3;
+        font-family: "Open Sans";
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 3% 2% 3% 2%;
+        background-color: transparent;
+        border: none;
+        border-bottom: rgba(134, 128, 128, 0.9) solid 1px;
+        font-family: "Open Sans";
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: 700;
+        color: #ffffff;
+
+        &--textarea {
+            resize: none;
+            width: 100%;
+            margin-bottom: 7%;
+        }
+    }
+
+    &__button {
+
+        @include tablets {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.send__button {
+    width: 40%;
+    height: 80px;
+    background-image: linear-gradient(90.0deg, #ea7400 0%, #f29400 100%);
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+    @include tablets {
+        width: 65%;
+    }
+
+    @include phones {
+        height: 60px;
+        width: 100%;
+    }
 }

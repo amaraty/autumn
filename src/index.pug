@@ -98,37 +98,11 @@ html(lang="ru")
 
 
       section.works
-        .container
-          .works__container
-            .works__title Мои Работы
-            .works__content
-              .slider
-                .slider__display
-                  img.slider__display-pic
-                  .slider__display-thumbs
-                    ul.slider-thumbs
-                      li.slider-thumbs__item
-                        a.slider-thumb__link
-                          img.slider-thumb__pic
-                  .slider__buttons
-                    a.direction-btn.direction-btn--next
-                    a.direction-btn.direction-btn--prev
-                  .slider__number 1
-                .slider__info
-                  .slider__tags
-                    ul.tags
-                      li.tags__item HTML
-                      li.tags__item CSS
-                      li.tags__item javaScript
-                  .slider__info-text
-                    h3.slider__info-title Сайт школы образования
-                    .slider__info-desc
-                      .slider__info-subtext Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                  .slider__info-btns
-                    a.iconed-link
-                      .iconed-link-text Посмотреть сайт
-                      .iconed-link__icon
-                        +icon("link")
+        .container.works__container
+          .works__title Мои Работы
+          .works__content
+            #slider-component
+            
 
       section.feedback
         .container
@@ -176,15 +150,15 @@ html(lang="ru")
                     .form__column
                       label.form__block
                         .form__block-title Введите ваше имя
-                        input.form__input(type="text" required)
+                        input.form__input(type="text" required placeholder="Ковальчук Дмитрий")
                     .form__column
                       label.form__block
                         .form__block-title Введите ваш email
-                        input.form__input(type="text" required)
+                        input.form__input(type="text" required placeholder="loftschool@study.com")
                   .form__row
                     label.form__block
-                      .form__block-title Сообшение к письму
-                      textarea.form__input.form__input--textarea
+                      .form__block-title Сообщение к письму
+                      textarea.form__input.form__input--textarea(placeholder="Требуется ваша помощь в создании сайта. Интересуют сроки и цена вопроса")
                       .form__button
                         button.send__button(type="submit") Отправить   
 
