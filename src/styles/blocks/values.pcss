@@ -1,85 +1,93 @@
 .values {
     background: url('../images/content/bg-values.jpg') center center / cover no-repeat;
+}
 
-
-    &__container {
-        position: relative;
-        padding-top: 200px;
-        padding-bottom: 300px;
-        height: 100%;
-    }    
+.values__container {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 300px;
+    height: 100%;
+}    
     
-    &__container:before {
-        content: "";
-        position: absolute;
-        background: url('../images/content/hands2.png') left bottom / contain no-repeat;
-        display: block;
-        bottom: 5%;
-        right: 79%;
-        width: 69%;
-        left: 0;
+.values__container:before {
+    content: "";
+    position: absolute;
+    background: url('../images/content/hands2.png') left bottom / contain no-repeat;
+    display: block;
+    bottom: 5%;
+    right: 79%;
+    width: 69%;
+    left: 0;
 
-        @include phones {
-            width: 100%;
-        }
+    @include phones {
+        width: 100%;
+    }
+}
+
+.values__wrapper {
+    position: relative;
+}
+
+.values__title {
+    margin-bottom: 82px;
+    display: flex;
+    justify-content: center;
+}
+
+.values__title-container {
+    width: 40%;
+    margin-left: 6%;
+
+    
+
+    @include desktop {
+        width: 42%;
+        margin-left: 0;
     }
 
-    &__wrapper {
-        position: relative;
+    @include tablets {
+        width: 68%;
+        text-align: center;
     }
 
-    &__title {
-        margin-bottom: 82px;
-        display: flex;
+     @include phones {
+        width: 100%;
+        margin-left: 0;
+        text-align: left;
+    }
+}
+
+.values__title-text {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #fff;
+    opacity: 1;
+    margin-bottom: 55px;
+}
+
+.values__title-subtext {
+    opacity: 0.5;
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #e5e5e5;
+}
+      
+.values__widget {
+    display: flex;
+    justify-content: flex-end;
+        
+    @include tablets {
         justify-content: center;
     }
-
-    &__title-container {
-        width: 38%;
-        margin-left: 6%;
-
-        @include desktop {
-            width: 42%;margin-left: 0;
-        }
-
-        @include tablets {
-            width: 68%;
-            text-align: center;
-        }
-
-        @include phones {
-            width: 100%;
-            margin-left: 0;
-            text-align: left;
-        }
-    }
-
-    &__title-text {
-        font-size: 30px;
-        font-weight: 700;
-        margin-bottom: 55px;
-    }
-
-    &__content {
-        color: rgba($text-color, .5);
-        font-weight: 600;
-        line-height: 1.8;
-    }
+}
       
-    &__widget {
-        display: flex;
-        justify-content: flex-end;
+.values__widget-container {
+    width: 66%;
         
-        @include tablets {
-            justify-content: center;
-        }
-    }
-      
-    .values__widget-container {
-        width: 66%;
-        
-        @include tablets {
-            width: 95%;
-        }
+    @include tablets {
+        width: 95%;
     }
 }
