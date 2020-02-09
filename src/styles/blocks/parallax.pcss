@@ -42,6 +42,21 @@
         &:nth-child(3) {
             top: 29.875rem;
             z-index: 10;
+            left: -25%;
+
+            @include desktop {
+                left: -40%;
+            }
+
+            @include tablets {
+                top: 23.875rem;
+                left: -93%;
+            }
+
+            @include phones {
+                top: 17.175rem;
+                left: -174%;
+            }
 
             .parallax__image {
                 //top: 400px;
@@ -52,6 +67,10 @@
         &:nth-child(4) {
             top: 50.9375rem;
             z-index: 15;
+
+            @include phones {
+                top: 44.9375rem;
+            }
 
             .parallax__image {
                 left: 0;
@@ -64,6 +83,10 @@
             top: 69.75rem;
             z-index: 16;
 
+            @include tablets {
+                top: 90rem;
+            }
+
             .parallax__image {
                 left: 0;
                 bottom: 0;
@@ -73,8 +96,12 @@
         }
 
         &:nth-child(6) {
-            top: 76.75rem;
+            top: 80rem;
             z-index: 16;
+
+            @include desktop {
+                top: 100rem;
+            }
 
             .parallax__image {
                 left: 0;
