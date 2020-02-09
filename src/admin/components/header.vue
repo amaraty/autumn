@@ -4,9 +4,9 @@
       .header__info
         .user
           .user__pic
-            img(src="../../images/content/user.jpg").user__pic-avatar
+            img(src="../../images/content/metome.jpg").user__pic-avatar
           .user__name 
-            span Владимир Астаханов
+            span Марат Юсипов
             a.exit-btn(@click="logout") Выйти
             
         .header__title Панель администрирования
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import {mapActions} from "vuex";
 export default {
   methods: {
     ...mapActions("user", ["logout"])
