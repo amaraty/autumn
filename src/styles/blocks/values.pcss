@@ -1,5 +1,6 @@
 .values {
     background: url('../images/content/bg-values.jpg') center center / cover no-repeat;
+
 }
 
 .values__container {
@@ -15,12 +16,24 @@
     background: url('../images/content/hands2.png') left bottom / contain no-repeat;
     display: block;
     bottom: 5%;
-    right: 79%;
     width: 69%;
-    left: 0;
+    height: 50%;
+    left: -10%;
+
+    @include desktop {
+        height: 33%;
+        left: -3%;
+    }
+
+    @include tablets {
+        width: 100%;
+        transform: rotate(-90deg) translate(129px, 0%);
+    }
 
     @include phones {
         width: 100%;
+        transform: rotate(-90deg) translate(-100px, 0%);
+
     }
 }
 

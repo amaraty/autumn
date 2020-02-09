@@ -1,34 +1,34 @@
 [
-    {
-      "id": 1,
-      "title": "Посетите гору Вашингтон, США",
-      "skills": "HTML, CSS, JavaScript",
-      "photo": "slider-1.jpg",
-      "link": "//travelask.ru/articles/gora-vashington-mesto-s-samoy-plohoy-pogodoy-v-mire",
-      "desc": "Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"
-    },
-    {
-      "id": 2,
-      "title": "Сайт школы онлайн образования",
-      "skills": "CSS, HTML, Javascript",
-      "photo": "slider-2.jpg",
-      "link": "//ru.wikipedia.org/wiki/Left_4_Dead",
-      "desc": "Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"
-    },
-    {
-      "id": 3,
-      "title": "Сайт школы онлайн образования",
-      "skills": "JavaScript, HTML, CSS",
-      "photo": "slider-3.jpg",
-      "link": "//worldoftanks.ru",
-      "desc": "Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"
-    },
-    {
-      "id": 4,
-      "title": "Ищу подходящее название",
-      "skills": "работа, Игры, Кот",
-      "photo": "slider-4.jpg",
-      "link": "//aviahelp.ru",
-      "desc": "Я не ожидал, что ты до сюда дойдёшь... =^О_о^="
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Посетите гору Вашингтон, США",
+    "skills": "HTML, CSS, JavaScript",
+    "photo": "slider-1.jpg",
+    "link": "//travelask.ru/articles/gora-vashington-mesto-s-samoy-plohoy-pogodoy-v-mire",
+    "desc": "Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"
+  },
+  {
+    "id": 2,
+    "title": "Сайт школы онлайн образования",
+    "skills": "CSS, HTML, Javascript",
+    "photo": "slider-2.jpg",
+    "link": "//ru.wikipedia.org/wiki/Left_4_Dead",
+    "desc": "Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"
+  },
+  {
+    "id": 3,
+    "title": "Сайт школы онлайн образования",
+    "skills": "JavaScript, HTML, CSS",
+    "photo": "slider-3.jpg",
+    "link": "//worldoftanks.ru",
+    "desc": "Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!"
+  },
+  {
+    "id": 4,
+    "title": "Ищу подходящее название",
+    "skills": "работа, Игры, Кот",
+    "photo": "slider-4.jpg",
+    "link": "//aviahelp.ru",
+    "desc": "Я не ожидал, что ты до сюда дойдёшь... =^О_о^="
+  }
+]

@@ -6,9 +6,9 @@ function moveLayersDependsOnScroll(wScroll) {
     Array.from(layers).forEach(layer => {
 
         const divider = layer.dataset.speed;
-        const strafe = wScroll * divider * 10;
+        const strafe = wScroll * divider;
 
-        layer.style.transform = 'translateY(-${strafe}%)';
+        layer.style.transform = `translateY(-${strafe}%)`;
 
 
     });
@@ -18,4 +18,4 @@ function moveLayersDependsOnScroll(wScroll) {
 window.addEventListener('scroll', e => {
     const wScroll = window.pageYOffset;
     moveLayersDependsOnScroll(wScroll);
-});
+})
