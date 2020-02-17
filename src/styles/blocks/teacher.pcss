@@ -8,6 +8,11 @@
         border-radius: 50%;
         overflow: hidden;
         margin-right: 30px;
+
+        @include phones {
+            width: 51px;
+            height: 51px;
+        }
     }
 
     &__name {
@@ -16,6 +21,14 @@
         font-size: 18px;
         font-weight: 700;
         line-height: 48px;
+
+        @include tablets {
+            font-size: 16px;
+        }
+
+        @include phones {
+            font-size: 16px;
+        }
     }
 
     &__proff {
@@ -23,7 +36,15 @@
         color: #ffffff;
         font-family: "Open Sans";
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 30px;
+
+        @include tablets {
+            font-size: 14px;
+        }
+
+        @include phones {
+            font-size: 14px;
+        }
     }
 }
