@@ -17,7 +17,7 @@
 .about {
     
     &__left {
-        width: 30%;
+        width: 35%;
 
         @include phones() {
             width: 100%;
@@ -41,6 +41,14 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 30px;
+
+        @include tablets {
+            font-size: 14px;
+        }
+
+        @include phones {
+            font-size: 14px;
+        }
     }
 
     &__username {
@@ -52,6 +60,16 @@
         line-height: 48px;
         margin-top: 30px;
         margin-bottom: 38px;
+
+        @include tablets {
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        @include phones {
+            font-size: 30px;
+            line-height: 36px;
+        }
     }
 
     &__desc {
@@ -62,6 +80,16 @@
         font-weight: 400;
         line-height: 30px;
         margin-bottom: 70px;
+
+        @include tablets {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        @include phones {
+            font-size: 14px;
+            line-height: 24px;
+        }
     }
     &__ps {
         display: flex;

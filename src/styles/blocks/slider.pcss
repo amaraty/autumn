@@ -112,6 +112,12 @@
     &:hover {
         outline: 3px solid #f29400;
     }
+
+    @include desktop {
+        &:last-child {
+            display: none;
+        }
+    }
 }
   
 .works-slider__thumb {
@@ -187,13 +193,14 @@
   
 .works-slider__data {
     width: 24%;
+    z-index: 40;
 
     @include tablets {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 18%;
+        padding: 0 6%;
         text-align: center;
     }
   

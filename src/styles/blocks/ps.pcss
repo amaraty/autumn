@@ -13,4 +13,24 @@
             margin-right: 3px;
         }
     }
+
+    &__text {
+        opacity: 0.5;
+        font-family: "Open Sans";
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        font-style: italic;
+        color: #fff;
+
+        @include tablets {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        @include phones {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
 }

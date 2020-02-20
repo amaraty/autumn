@@ -15,24 +15,31 @@
     position: absolute;
     background: url('../images/content/hands2.png') left bottom / contain no-repeat;
     display: block;
-    bottom: 5%;
-    width: 69%;
-    height: 50%;
+    bottom: -7%;
+    width: 662px;
+    height: 965px;
     left: -10%;
 
     @include desktop {
-        height: 33%;
+        width: 395px;
+        height: 677px;
         left: -3%;
+        bottom: -3%;
     }
 
     @include tablets {
-        width: 100%;
+        width: 486px;
+        height: 337px;
         transform: rotate(-90deg) translate(129px, 0%);
+        left: 0%;
+        bottom: -4%;
     }
 
     @include phones {
-        width: 100%;
+        width: 320px;
+        height: 347px;
         transform: rotate(-90deg) translate(-100px, 0%);
+        bottom: 5.5%;
 
     }
 }
