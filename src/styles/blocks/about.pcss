@@ -1,0 +1,81 @@
+.about {
+    display: flex;
+    background: url('../images/content/numbers.png') center center / cover no-repeat;
+}
+
+.about__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+
+    @include phones() {
+        flex-direction: column;
+    }
+}
+
+.about {
+    
+    &__left {
+        width: 30%;
+
+        @include phones() {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    &__right {
+        width: 60%;
+
+        @include phones(){
+            width: 100%;
+        }
+    }
+
+    &__welcome-text {
+        opacity: 0.5;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    &__username {
+        position: relative;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 48px;
+        margin-top: 30px;
+        margin-bottom: 38px;
+    }
+
+    &__desc {
+        opacity: 0.5;
+        color: #ffffff;
+        font-family: "Open Sans - Semibold";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 70px;
+    }
+    &__ps {
+        display: flex;
+        flex-direction: row;
+        opacity: 0.5;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: italic;
+        line-height: 30px;
+        position: relative;
+        left: -54px;
+
+        @include phones() {
+            left: -27px;
+        }
+    }
+}

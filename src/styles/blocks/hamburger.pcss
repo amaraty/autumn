@@ -1,0 +1,36 @@
+.header__hamburger {
+    width: 24px;
+    height: 3px;
+    background: white;
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: none;
+
+    @include tablets() {
+        display: block;  
+    }
+
+    @include phones() {
+        display: block;
+    }
+}
+
+.header__hamburger:after, .header__hamburger:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: white;
+    position: absolute;
+}
+
+.header__hamburger:after {
+    top: 100%;
+    margin-top: 4px;
+}
+
+.header__hamburger:before {
+    bottom: 100%;
+    margin-bottom: 4px;
+}
